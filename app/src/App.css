@@ -1,0 +1,77 @@
+body {
+    background-color: #282c34;
+    color: white;
+    font-family: Arial;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+
+.header {
+
+    background-color: #3b414d;
+    display: flex;
+    height:50px;
+}
+
+.main{
+    flex: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.submain{
+    display: flex;
+    flex: auto;
+    position: relative;
+    flex-direction: row;
+}
+
+.smleft,
+.smright {
+    width: 150px;
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.display{
+background-color: #3b414d;
+    width: 600px;
+    height: 600px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.center{
+
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 300px;
+}
+
+.skills,
+.personal,
+.emphistory,
+.misc {
+background-color: #3b414d;
+    height: 100px;
+    width: 100px;
+}
+
+.footer{
+    background-color: #3b414d;
+    display: flex;
+    width: 100vw;
+    height: 50px;
+}
