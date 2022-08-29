@@ -16,6 +16,7 @@ body {
     background-color: #3b414d;
     display: flex;
     flex-shrink: 0;
+    position:fixed;
     align-items: center;
     height: 50px;
     padding-left: 3rem;
@@ -36,9 +37,7 @@ body {
 .submain {
     display: flex;
     flex: auto;
-    position: relative;
     flex-direction: row;
-
 }
 
 .smleft,
@@ -50,27 +49,41 @@ body {
     align-items: center;
     justify-content: space-around;
 }
+.displayOuter{
+    border: 1px solid #919cb4;
+    border-radius: 4px;
+    padding: 5px;
+    margin-bottom: 10px;
 
+}
 .display {
     background-color: #3b414d;
-    width: 600px;
-    height: 500px;
+    width: clamp(100px, 50vw, 600px);
+    height: clamp(100px, 50vw, 800px);
     position: relative;
     display: flex;
     flex-direction: column;
     border-radius: 4px;
     overflow-y: scroll;
+    padding: 10px;
 }
 
 
 .button{
     background-color:#282c34;
-    border-radius: 4px;
+    border-radius: 0px;
+    padding: 5px;
     color: lightslategrey;
     border: 1px solid lightslategray;
 }
 .button:hover{
     background-color: black;
+}
+.buttonBox{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10px;
+    justify-content: space-around;
 }
 
 .center {
@@ -109,7 +122,6 @@ body {
     text-align:left;
 }
 .chunk {
-    background: #00f2ff0b;
     border: 1px solid #00f2ff79;
     border-radius: 4px;
     padding:5px;
@@ -131,7 +143,7 @@ p {
     justify-content:flex-start;
     background-color: #3b414d;
     padding: 1rem;
-    position: absolute;
+    /* position: absolute; */
     bottom: 0;
     flex-shrink: 0;
     width: 100vw;
@@ -140,6 +152,7 @@ p {
 
 .social{
     margin-left: 20px;
+    /* size: 20px; */
 }
 /* table area start */
 table {
@@ -165,3 +178,4 @@ table {
     color: white;
   }
   /* table area end */
+

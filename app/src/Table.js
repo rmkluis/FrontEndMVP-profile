@@ -1,6 +1,9 @@
 import React from "react";
+import {TableMapper} from "./Display.js"
 
-function Table({ CRUD }) {
+
+
+function Table(props) {
   // console.log(CRUD)
   return (
     <>
@@ -13,15 +16,7 @@ function Table({ CRUD }) {
           </tr>
         </thead>
         <tbody>
-          {CRUD.map((row) => {
-            return (
-              <tr key={row.id}>
-                <td contentEditable onInput={event => console.log(event.target.innerText)}>{row.slot1}</td>
-                <td contentEditable onInput={event => console.log(event.target.innerText)}>{row.slot2}</td>
-                <td contentEditable onInput={event => console.log(event.target.innerText)}>{row.slot3}</td>
-              </tr>
-            );
-          })}
+            {props.TableMapper()}
         </tbody>
       </table>
     </>

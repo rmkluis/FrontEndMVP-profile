@@ -17,14 +17,14 @@ const pool = new pg.Pool({ database: "CRUDdb" })
     });
   });
 
-function getSpecial(idParam){
-  app.get(`/api/CRUD/:idParam`, (req, res) => {
-    const { id } = req.params;
-    pool.query("SELECT * FROM CRUD WHERE id = $1", [id]).then((result) => {
-      res.send(result.rows);
-    });
-  });
-}
+// function getSpecial(idParam){
+//   app.get(`/api/CRUD/:idParam`, (req, res) => {
+//     const { id } = req.params;
+//     pool.query("SELECT * FROM CRUD WHERE id = $1", [id]).then((result) => {
+//       res.send(result.rows);
+//     });
+//   });
+// }
 
   app.delete("/api/CRUD/:id", async (req, res) => {
     const { id } = req.params;

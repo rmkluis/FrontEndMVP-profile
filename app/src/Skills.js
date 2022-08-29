@@ -26,6 +26,7 @@ function SkillsChunkFront(){
     <h4>
       Frontend
     </h4>
+    <p>JavaScript, HTML, CSS, API integration, React</p>
     </>
   )
 }
@@ -36,6 +37,7 @@ function SkillsChunkBack(){
     <h4>
       Backend
     </h4>
+    <p>SQL, Postgres, RESTful APIs, CRUD</p>
     </>
   )
 }
