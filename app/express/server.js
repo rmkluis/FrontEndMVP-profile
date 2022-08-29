@@ -43,6 +43,13 @@ function getSpecial(idParam){
     res.send(result.rows[0]);
   })
 
+  app.post("/api/CRUD", (req, res)=>{
+    pool.query("INSERT INTO CRUD (slot1, slot2, slot3) VALUES ('New Row Cell', 'New Row Cell', 'New Row Cell')").then(
+    pool.query("SELECT * FROM CRUD").then((result) => {
+      res.send(result.rows);
+    }));
+  })
+
 
 app.listen(PORT, ()=>{
     console.log("Listening to port:" + PORT)

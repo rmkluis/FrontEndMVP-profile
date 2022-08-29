@@ -1,9 +1,9 @@
 import React from 'react'
-import robin from './robin.jpeg'
+import robin from './robin.PNG'
 
-function Center(props) {
+function Center() {
   return (
-    <img className='center' src={robin} />
+    <img className='center' src={robin} alt=""/>
   )
 }
 

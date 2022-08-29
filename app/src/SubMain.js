@@ -6,13 +6,23 @@ import Center from './Center.js'
 function SubMain(props) {
   return (
     <>
-    <div className="submain">    
-    <SMLeft smleft="SMLeft"/>
-    <Center center="Center"/>
-    <SMRight smright="SMRight"/></div>
-
+      <div className="submain">
+        <SMLeft
+          smleft="SMLeft"
+          setSkillsDisplay={props.setSkillsDisplay}
+          skillsDisplay={props.skillsDisplay}
+          setEmpHistoryDisplay={props.setEmpHistoryDisplay}
+          empHistoryDisplay={props.empHistoryDisplay}        />
+        <Center center="Center" />
+        <SMRight
+          smright="SMRight"
+          setSkillsDisplay={props.setSkillsDisplay}
+          skillsDisplay={props.skillsDisplay}
+          setEmpHistoryDisplay={props.setEmpHistoryDisplay}
+          empHistoryDisplay={props.empHistoryDisplay}        />
+      </div>
     </>
-  )
+  );
 }
 
 export default SubMain

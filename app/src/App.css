@@ -4,33 +4,41 @@ body {
     font-family: Arial;
     text-align: center;
     display: flex;
+    margin: 0;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100vw;
+    height: 100%;
 }
 
 .header {
-
+    align-items: center;
     background-color: #3b414d;
     display: flex;
-    height:50px;
+    flex-shrink: 0;
+    align-items: center;
+    height: 50px;
+    padding-left: 3rem;
+    width: 100vw;
+
 }
 
-.main{
+.main {
     flex: auto;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding-bottom: 20px;
 }
 
-.submain{
+.submain {
     display: flex;
     flex: auto;
     position: relative;
     flex-direction: row;
+
 }
 
 .smleft,
@@ -43,35 +51,117 @@ body {
     justify-content: space-around;
 }
 
-.display{
-background-color: #3b414d;
+.display {
+    background-color: #3b414d;
     width: 600px;
-    height: 600px;
+    height: 500px;
     position: relative;
     display: flex;
     flex-direction: column;
+    border-radius: 4px;
+    overflow-y: scroll;
 }
 
-.center{
 
+.button{
+    background-color:#282c34;
+    border-radius: 4px;
+    color: lightslategrey;
+    border: 1px solid lightslategray;
+}
+.button:hover{
+    background-color: black;
+}
+
+.center {
+    padding-top: 50px;
+    padding-bottom: 50px;
     display: flex;
     flex-direction: column;
-    height: 300px;
     width: 300px;
+    height: 300px;
+    border-radius: 50%;
 }
 
 .skills,
 .personal,
 .emphistory,
 .misc {
-background-color: #3b414d;
-    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #3b414d;
+    height: 30px;
     width: 100px;
+    border-radius: 4px;
+
 }
 
-.footer{
-    background-color: #3b414d;
-    display: flex;
-    width: 100vw;
-    height: 50px;
+.skills:hover,
+.personal:hover,
+.emphistory:hover,
+.misc:hover {
+    background: black;
 }
+
+.empHistoryChunk{
+    padding: 15px;
+    text-align:left;
+}
+.chunk {
+    background: #00f2ff0b;
+    border: 1px solid #00f2ff79;
+    border-radius: 4px;
+    padding:5px;
+}
+
+h4{
+    color:#cbd5e9;
+}
+
+p {
+    color:#919cb4;
+
+    font-family:'Times New Roman', Times, serif;
+    font-weight: normal;
+}
+
+.footer {
+    display: flex;
+    justify-content:flex-start;
+    background-color: #3b414d;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    flex-shrink: 0;
+    width: 100vw;
+
+}
+
+.social{
+    margin-left: 20px;
+}
+/* table area start */
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  table td, table th {
+    border: 1px solid #00f2ff79;
+    padding: 8px;
+  }
+  
+  table tr:nth-child(even){background-color: #3b414d;}
+  
+  table tr:hover {background-color: #282c34;}
+  
+  table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color:#00f2ff79;
+    color: white;
+  }
+  /* table area end */

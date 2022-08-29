@@ -1,9 +1,43 @@
 import React from 'react'
 
-function Skills() {
+function Skills(props) {
   return (
-    <div className='skills'>Skills</div>
+    <div
+      className="skills"
+      onClick={() => {
+        if (props.empHistoryDisplay) {
+          props.setEmpHistoryDisplay();
+        }
+        if(!props.skillsDisplay){props.setSkillsDisplay()};
+      }}
+    >
+      {" "}
+      Skills{" "}
+    </div>
+  );
+}
+
+function SkillsChunkFront(){
+  return (
+    <>
+    <h1>
+      Skills:
+    </h1>
+    <h4>
+      Frontend
+    </h4>
+    </>
   )
 }
 
-export default Skills
+function SkillsChunkBack(){
+  return (
+    <>
+    <h4>
+      Backend
+    </h4>
+    </>
+  )
+}
+
+export {Skills, SkillsChunkFront, SkillsChunkBack}
